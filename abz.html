@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="abz.css" />
+    <link rel="stylesheet" href="fontabz.css" />
+  </head>
+  <body>
+    <div class="error-body">
+      <div class="errors-content">erroro  asdasda</div>
+    </div>
+    <header>
+
+      <div class="headerCon">
+        <div class="logo">
+          <img src="img\Logo.png" alt="" />
+        </div>
+        <nav>
+          <a href="#getCon"><button>Users</button></a>
+          <a href="#postCon"><button>Sign up</button></a>
+        </nav>
+      </div>
+    </header>
+    <div class="con">
+      <div class="banner">
+        <div class="bannerText">
+          <h1>Test assignment for front-end developer</h1>
+          <p>
+            What defines a good front-end developer is one that has skilled
+            knowledge of HTML, CSS, JS with a vast understanding of User design
+            thinking as they'll be building web interfaces with accessibility in
+            mind. They should also be excited to learn, as the world of
+            Front-End Development keeps evolving.
+          </p>
+          <a href="#postCon"><button>Sign up</button></a>
+        </div>
+      </div>
+      <h2>Working with GET request</h2>
+      <div id="getCon" class="getCon"></div>
+      <button class="showMore">Show more</button>
+    </div>
+    
+    <div class="normal">
+      <h2>Working with POST request</h2>
+      <div id="postCon" class="postCon">
+        <div class="intext">
+          <input type="text" class="yname inputForPost" title="yname" placeholder="Your name">
+          <div class="errorName errors">User name should be 2-60 characters</div>
+          <input type="text" class="email inputForPost" title="email" placeholder="Email">
+          <div class="errorMail errors">Email should be like this example@example.com and be less then 100 characters</div>
+          <input type="text" class="phone inputForPost" title="phone"  placeholder="Phone">
+          <div class="errorPhone errors">Phone number should start from +380</div>
+        </div>
+          
+          <div class="positions">
+            <p>Select your position</p>
+            <div class="poscon"></div>
+          </div>
+
+          <div class="upload">
+            <input id="upload"  title="upload" type="file" name="photo" accept=".jpg, .jpeg">
+            <label for="upload">Upload</label>
+            <div class="loaded">Upload your photo</div>
+          </div>
+          <div class="errorPhoto">Photo should be jpg/jpeg image, with resolution at least 70x70px and size must not exceed 5MB</div>
+      </div>
+      <footer><button class="signup">Sign up</button></footer>
+    </div>
+    <div class="afterSent"></div>
+    <div class="spinner">
+      <div class="end"></div>
+      <div class="secondend"></div>
+    </div>
+    <script src="abz.js"></script>
+  </body>
+</html>
